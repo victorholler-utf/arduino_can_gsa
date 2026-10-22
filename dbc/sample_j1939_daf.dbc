@@ -1,0 +1,62 @@
+VERSION ""
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BU_: Engine Vector__XXX
+
+BO_ 2364539904 EEC1: 8 Engine
+ SG_ DriversDemandEnginePercentTorque : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ ActualEnginePercentTorque : 16|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ EngineSpeed : 24|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
+
+BO_ 2566844672 CCVS: 8 Engine
+ SG_ ClutchSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BrakeSwitch : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WheelBasedVehicleSpeed : 8|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+
+BO_ 2566843904 ET1: 8 Engine
+ SG_ EngineCoolantTemperature : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngineFuelTemperature : 8|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngineOilTemperature : 16|16@1+ (0.03125,-273) [-273|1735] "deg C" Vector__XXX
+
+BO_ 2566844928 LFE: 8 Engine
+ SG_ EngineFuelRate : 0|16@1+ (0.05,0) [0|3212.75] "L/h" Vector__XXX
+ SG_ EngineInstantaneousFuelEconomy : 16|16@1+ (0.001953125,0) [0|125] "km/L" Vector__XXX
+
+CM_ BO_ 2364539904 "Electronic Engine Controller 1 (PGN 61444 / 0xF004)";
+CM_ SG_ 2364539904 EngineSpeed "Actual engine speed (SPN 190)";
+CM_ BO_ 2566844672 "Cruise Control/Vehicle Speed (PGN 65265 / 0xFEF1)";
+CM_ SG_ 2566844672 WheelBasedVehicleSpeed "Wheel-based vehicle speed (SPN 84)";
+CM_ BO_ 2566843904 "Engine Temperature 1 (PGN 65262 / 0xFEEE)";
+CM_ SG_ 2566843904 EngineCoolantTemperature "Engine Coolant Temperature (SPN 110)";
+CM_ BO_ 2566844928 "Liquid Fuel Economy (PGN 65266 / 0xFEF2)";

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+venv/
+ENV/
+
+# Logs gerados em testes locais (mantenha a pasta mas ignore logs muito grandes)
+logs/*.asc
+# Se desejar versionar os logs de exemplo, descomente:
+!logs/raw_can_sample.csv
+
+# Arduino / IDEs
+.vscode/
+.idea/
+*.hex
+*.elf
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
