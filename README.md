@@ -1,3 +1,6 @@
+<img width="1128" height="191" alt="gsapg_cover" src="https://github.com/user-attachments/assets/8ce9e794-fa5b-4ea3-a6be-9a5384ac118b" />
+
+
 # DAF CF - CAN Bus (J1939 / OBD-II) Logger & Decoder
 
 Sistema completo para captura, decodificação em tempo real e armazenamento de telemetria CAN (SAE J1939 e OBD-II) de caminhões **DAF CF**, utilizando **Arduino Uno / Nano + MCP2515 (Cristal 8 MHz)**.
